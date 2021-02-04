@@ -180,7 +180,7 @@ Result<MangaChapterCollection, QString> MangaDex::updateMangaInfoFinishedLoading
             auto chapterObject = chapter.value;
             auto language = asQstring(chapterObject["lang_code"]);
 
-            if (language != "gb")
+            if (language != "fr")
                 continue;
 
             auto numChapter = asQstring(chapterObject["chapter"]);
